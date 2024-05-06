@@ -6,4 +6,7 @@ test("GET to /api/vi/status should return 200", async () => {
   expect(responseBody.update_at).toBeDefined();
   const parsedUpdateAt = new Date(responseBody.update_at).toISOString();
   expect(responseBody.update_at).toEqual(parsedUpdateAt);
+
+  const postgresVersion = "PostgreSQL 16.0";
+  expect(responseBody.postgres_version).toEqual(postgresVersion);
 });

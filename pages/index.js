@@ -1,9 +1,5 @@
 function Home() {
-  return (
-    <h1>
-      I love you <span style={{ color: "red" }}>&#10084;</span>
-    </h1>
-  );
+  return <h1>Return test</h1>;
 }
 
 export default Home;
